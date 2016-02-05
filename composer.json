@@ -1,0 +1,26 @@
+{
+  "name": "consynki/yii2-image-input",
+  "version": "1.0.0",
+  "description": "A Yii2input widget to allow a better drag drop image upload",
+  "type": "yii2-extension",
+  "keywords": ["image", "input", "yii2"],
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Levi Putna",
+      "email": "levi.putna@consynki.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "consynki\\yii\\input\\": "src/"
+    }
+  }
+}
+        

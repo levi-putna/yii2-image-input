@@ -6,12 +6,11 @@
  * Time: 1:19 PM
  */
 
-namespace backend\widgets\input;
+namespace consynki\yii\input;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\InputWidget;
-
 
 class ImageInput extends InputWidget
 {

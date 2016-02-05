@@ -6,7 +6,7 @@
  * Time: 2:26 PM
  */
 
-namespace backend\widgets\input;
+namespace consynki\yii\input;
 
 use yii\web\AssetBundle;
 

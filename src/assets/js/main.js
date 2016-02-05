@@ -21,6 +21,7 @@
         classes: {
             main:      'dropzone',
             hint:      'dropzone-hint',
+			inner:     'dropzone-inner',
             enter:     'dropzone-enter',
             reject:    'dropzone-reject',
             accept:    'dropzone-accept',
@@ -90,7 +91,7 @@
             // Build the whole dropzone
             $input
                 .wrap($container)
-                .before('<div class="' + settings.classes.hint + '"><div><i class="fa fa-fw"></i></div>' + settings.text + '</div>');
+                .before('<div class="' + settings.classes.inner + '"><div  class="' + settings.classes.hint + '"><div><i class="fa fa-fw"></i></div>' + settings.text + '</div></div>');
 
             $dropzone = $input.parent('.' + settings.classes.main);
 
@@ -261,7 +262,7 @@
                                 $dropzone.find('img').remove();
 
                                 if (isImage && settings.previewImage === true) {
-                                    $dropzone.find('div').html($(img).fadeIn());
+                                    $dropzone.find('div').html($(img));
                                 } else {
                                     $dropzone.find('div').html('<span>' + formatted + '</span>');
                                 }
@@ -304,7 +305,7 @@
 
         // Is an image
         img.onload = function() {
-            $dropzone.find('div').html($(img).fadeIn());
+            $dropzone.find('div').html($(img));
 
             if ($.isFunction(callback)) {
                 callback.apply(this);

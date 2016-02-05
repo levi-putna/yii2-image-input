@@ -10,6 +10,7 @@ namespace consynki\yii\input;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
+use yii\web\View;
 use yii\widgets\InputWidget;
 
 class ImageInput extends InputWidget
@@ -46,7 +47,8 @@ class ImageInput extends InputWidget
                         })
                   });';
 
-        return Html::activeFileInput($this->model, $this->attribute, $options) . "<script>{$script};</script>";;
+        $this->view->registerJs($script, View::POS_READY);
+        return Html::activeFileInput($this->model, $this->attribute, $options);
     }
 
     /**

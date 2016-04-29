@@ -9,13 +9,11 @@ The preferred way to install this extension is through [composer](http://getcomp
 
 To install, either run
 
-```$ composer require consynki/yii2-image-input "*"
-```
+```$ composer require consynki/yii2-image-input "*"```
 
 or add
 
-```"consynki/yii2-image-input": "*"
-```
+```"consynki/yii2-image-input": "*"```
 
 to the
 ```require```
